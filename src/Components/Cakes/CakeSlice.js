@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   totalCakes: 99,
-  restockCake: 100,
+  // restockCake: 100,
 };
 
 const cakeSlice = createSlice({
@@ -13,7 +13,7 @@ const cakeSlice = createSlice({
       state.totalCakes--;
     },
     restock: (state) => {
-      state.restockCake += 100;
+      state.totalCakes += 100;
     },
   },
 });
